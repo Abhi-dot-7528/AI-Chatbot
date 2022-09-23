@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MITRC BOT</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style-2.css') }}"
+    />
+  </head>
+  <body>
+    <div class="star-1"></div>
+    <div class="wrapper">
+      <div class="Project-Title">AI Chatbot</div>
+      <div class="Guide-name">
+        Guided by: Mr. Javed Moazzam (Asst. Prof. CSE Dept.)
+      </div>
+      <div class="static-txt">Team Members:</div>
+      <ul class="dynamic-txts">
+        <li><span>Tarun Mudgal</span></li>
+        <li><span>Surya Pratap</span></li>
+        <li><span>Lomesh Kumar</span></li>
+        <li><span>Akash Kakkar</span></li>
+        <li><span>Abhinav Tiwari</span></li>
+      </ul>
+    </div>
+    <main>
+      <div class="chatbox">
+        <div class="chatbox_support">
+          <div class="chatbox_header">
+            <span>
+              <div class="chatbox_header_img">
+                <img
+                  src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png"
+                  alt="image"
+                />
+              </div>
+              <div class="chatbox_header_content">
+                <h4 class="chatbox_header_content--heading">
+                  MITRC BOT - College Admission Assitant
+                </h4>
+              </div>
+            </span>
+          </div>
+
+          <div class="chatbox_mainWindow">
+            <div></div>
+          </div>
+
+          <div class="chatbox_footer">
+            <input type="text" placeholder="Message" />
+            <button type="submit" class="send_button">
+              <img
+                src="https://img.icons8.com/material/40/000000/sent--v1.png"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="chatbox_button" title="Chat with us!!!">
+          <img
+            src="https://img.icons8.com/external-flaticons-flat-circular-flat-icons/100/000000/external-chatbot-live-streaming-flaticons-flat-circular-flat-icons.png"
+          />
+        </div>
+      </div>
+    </main>
+
+    <script>
+      $SCRIPT_ROOT = {{request.script_root|tojson|safe }};
+    </script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='app-2.js') }}"
+    ></script>
+  </body>
+</html>
